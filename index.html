@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweep — Clean your camera roll. One swipe at a time.</title>
+  <meta name="description" content="Sweep frees up gigabytes on your iPhone by swiping photos away like a game. 100% on-device, no ads, no subscription, no account, no data collected. One-time unlock." />
+  <meta name="theme-color" content="#0E1116" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sweep — Clean your camera roll. One swipe at a time." />
+  <meta property="og:description" content="Free up gigabytes by swiping. On-device, no ads, no subscription. One-time unlock." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="anim">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#top" aria-label="Sweep home">
+        <span class="logo-mark" aria-hidden="true">
+          <!-- broom + sparkle mark -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="#03261f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19.5 4.5 13 11" />
+            <path d="M14 9c-3 0-5 1.5-6.4 4.2C6.3 15.6 5 17 3 18c2.6 1.4 5.6 1.6 8 .2 2.4-1.4 3.6-3.6 3.6-6.2 0-1.1-.2-2-.6-3Z" />
+            <path d="M18 3l.6 1.6L20 5l-1.4.7L18 7l-.6-1.3L16 5l1.4-.4L18 3Z" fill="#03261f" stroke="none" />
+          </svg>
+        </span>
+        <span>Sweep</span>
+      </a>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm" href="#download">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.9 5.1L19 9l-5.1 1.9L12 16l-1.9-5.1L5 9l5.1-1.9L12 2Z"/></svg>
+            Photo cleaner for iPhone
+          </span>
+          <h1 id="hero-title">Free up gigabytes <span class="gradient-text">by swiping.</span></h1>
+          <p class="sub">Your camera roll becomes a deck of cards. Swipe to keep, swipe to bin — 100% on your device, one-time unlock, no subscription.</p>
+
+          <div class="hero-cta">
+            <!-- TODO: replace href="#" with your real App Store listing URL -->
+            <a class="appstore-badge" href="#" aria-label="Download Sweep on the App Store">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2 1.6-3 1.7-3.1-.9-1.4-2.4-1.5-2.9-1.6-1.2-.1-2.4.7-3 .7s-1.6-.7-2.6-.7c-1.3 0-2.6.8-3.3 2-1.4 2.4-.4 6 1 8 .7 1 1.4 2 2.5 2 1 0 1.4-.6 2.6-.6s1.5.6 2.6.6c1.1 0 1.8-1 2.4-2 .8-1.1 1.1-2.2 1.1-2.3 0-.1-2.1-.8-2.1-3.2ZM14.5 6.3c.6-.7 1-1.7.9-2.7-.8 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.5.9.1 1.9-.4 2.5-1.1Z"/></svg>
+              <span class="badge-copy">
+                <span class="badge-small">Download on the</span>
+                <span class="badge-big">App Store</span>
+              </span>
+            </a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+
+          <div class="hero-trust" aria-label="Key promises">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> On-device</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> No ads</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> No subscription</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> No account</span>
+          </div>
+        </div>
+
+        <!-- Phone mockup -->
+        <div class="phone-wrap">
+          <div class="phone" role="img" aria-label="Sweep app showing a deck of photo cards with a Freed counter at 1.8 gigabytes. Swipe right to keep, left to bin.">
+            <div class="phone-screen">
+              <div class="phone-notch" aria-hidden="true"></div>
+              <div class="screen-top">
+                <span class="s-title">Sweep</span>
+                <span class="s-month">June</span>
+              </div>
+
+              <div class="freed">
+                <div class="freed-label">Freed so far</div>
+                <div class="freed-num"><span id="freedNum" data-target="1.8">0.0</span><span class="unit">GB</span></div>
+              </div>
+
+              <div class="deck" aria-hidden="true">
+                <!-- back cards -->
+                <div class="deck-card c3">
+                  <div class="photo" style="background:linear-gradient(150deg,#3a4a52,#1b242b);"></div>
+                  <div class="meta"><span>IMG_4471</span><span>4.1 MB</span></div>
+                </div>
+                <div class="deck-card c2">
+                  <div class="photo" style="background:linear-gradient(150deg,#5a4632,#241a12);"></div>
+                  <div class="meta"><span>IMG_4472</span><span>3.7 MB</span></div>
+                </div>
+                <!-- top card -->
+                <div class="deck-card c1">
+                  <div class="photo" style="background:
+                      radial-gradient(70% 60% at 30% 28%, rgba(31,209,165,.5), transparent 60%),
+                      linear-gradient(150deg,#1f5e57,#11313a);"></div>
+                  <span class="swipe-badge keep">Keep</span>
+                  <div class="meta"><span>IMG_4473</span><span>5.2 MB</span></div>
+                </div>
+              </div>
+
+              <div class="screen-actions" aria-hidden="true">
+                <div class="act bin">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/></svg>
+                </div>
+                <div class="act keep">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-10-9.3C.6 8.9 2 5.5 5.2 5.1 7 4.9 8.6 5.9 12 9c3.4-3.1 5-4.1 6.8-3.9C22 5.5 23.4 8.9 22 11.7 19.5 16.4 12 21 12 21Z"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HONEST WEDGE ===================== -->
+    <section class="wedge container" aria-label="What Sweep does not do">
+      <div class="wedge-row">
+        <span class="wedge-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Stays on your iPhone</span>
+        <span class="wedge-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m5 5 14 14"/></svg> No ads, ever</span>
+        <span class="wedge-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h10"/><path d="m17 17 5 5M22 17l-5 5"/></svg> No subscription</span>
+        <span class="wedge-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M3 12h18" opacity="0"/><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/><path d="m3 3 18 18" /></svg> No account</span>
+        <span class="wedge-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9"/><path d="M16 4h5v5"/><path d="M21 4 11 14"/></svg> Collects no data</span>
+      </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How it works</span>
+          <h2 id="how-title">Three steps to a lighter phone</h2>
+          <p>No imports, no waiting, no cloud. Open the app and start clearing space in seconds.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.6"/><path d="m21 15-5-5L5 21"/></svg>
+            </div>
+            <h3>Open</h3>
+            <p>Sweep loads your photos by month, right on your device. Grant Photos access and you are ready.</p>
+          </article>
+
+          <article class="step">
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h11"/><path d="m11 8-4 4 4 4"/><path d="M20 6v12"/></svg>
+            </div>
+            <h3>Swipe</h3>
+            <p>Swipe right to keep, left to bin. Crisp haptics, a satisfying rhythm, and a live counter for every GB freed.</p>
+          </article>
+
+          <article class="step">
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/><path d="M14 4l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2Z"/></svg>
+            </div>
+            <h3>Clean</h3>
+            <p>Tap Clean and binned photos move to iOS Recently Deleted — recoverable for 30 days before they are gone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section class="section" id="features" aria-labelledby="feat-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Sweep Pro</span>
+          <h2 id="feat-title">Smart finders do the hunting</h2>
+          <p>Upgrade once and Sweep surfaces the clutter automatically — all detected on-device, nothing uploaded.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature">
+            <div class="f-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M4 16V6a2 2 0 0 1 2-2h10"/></svg>
+            </div>
+            <div>
+              <h3>Duplicates <span class="tag-pro">Pro</span></h3>
+              <p>Finds exact copies hiding across your library so you keep one and reclaim the rest.</p>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="f-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg>
+            </div>
+            <div>
+              <h3>Similar &amp; bursts <span class="tag-pro">Pro</span></h3>
+              <p>Groups near-identical shots and burst runs so you pick the best and bin the rest in one pass.</p>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="f-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" stroke-dasharray="3 3"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <div>
+              <h3>Blurry photos <span class="tag-pro">Pro</span></h3>
+              <p>Detects soft, out-of-focus, and accidental shots that are just taking up space.</p>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="f-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg>
+            </div>
+            <div>
+              <h3>Large videos <span class="tag-pro">Pro</span></h3>
+              <p>Sorts your heaviest clips to the top — the fastest way to free serious gigabytes.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="free-row">
+          <div class="f-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 4.5 13 11"/><path d="M14 9c-3 0-5 1.5-6.4 4.2C6.3 15.6 5 17 3 18c2.6 1.4 5.6 1.6 8 .2 2.4-1.4 3.6-3.6 3.6-6.2 0-1.1-.2-2-.6-3Z"/></svg>
+          </div>
+          <div>
+            <strong>Free forever:</strong>
+            <p>Swipe-clean by Month and Screenshots with no caps. The whole core experience, free — Pro just adds the smart finders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRIVACY ===================== -->
+    <section class="section privacy-band" id="privacy" aria-labelledby="privacy-title">
+      <div class="container">
+        <div class="privacy-card">
+          <div class="privacy-shield" aria-hidden="true">
+            <div class="shield-ring">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4.5"/></svg>
+            </div>
+          </div>
+          <div>
+            <span class="eyebrow">Private by design</span>
+            <h2 id="privacy-title">Your photos never leave your phone</h2>
+            <p>Sweep was built to be the cleaner you can actually trust. There is no server to send your library to — because there is no server.</p>
+            <ul class="privacy-list">
+              <li>
+                <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <div><strong>100% on-device</strong><span>Every photo, scan, and decision happens locally on your iPhone.</span></div>
+              </li>
+              <li>
+                <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <div><strong>No ads, no account, no tracking</strong><span>No sign-up, no profile, no analytics SDKs watching what you do.</span></div>
+              </li>
+              <li>
+                <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <div><strong>Collects no data</strong><span>We can't see your photos and never collect or sell your information.</span></div>
+              </li>
+              <li>
+                <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <div><strong>Deletes are recoverable</strong><span>Binned photos go to iOS Recently Deleted, recoverable for 30 days.</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRICING ===================== -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pricing</span>
+          <h2 id="pricing-title">Free to start. Pro is a one-time $4.99.</h2>
+          <p>No subscription. No upsells. Pay once for the smart finders and keep them.</p>
+        </div>
+
+        <div class="pricing-wrap">
+          <article class="price-card">
+            <span class="plan-name">Sweep Free</span>
+            <div class="price"><span class="amount">$0</span></div>
+            <p class="price-note">The full swipe-to-clean experience.</p>
+            <ul class="plan-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Swipe-clean by <strong>Month</strong>, no caps</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Swipe-clean <strong>Screenshots</strong>, no caps</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Live <strong>Freed GB</strong> counter &amp; haptics</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> 100% on-device, no account</li>
+            </ul>
+            <a class="btn btn-ghost" href="#download">Start free</a>
+          </article>
+
+          <article class="price-card featured">
+            <span class="plan-name">Sweep Pro</span>
+            <div class="price"><span class="amount">$4.99</span><span class="per">one-time</span></div>
+            <p class="price-note">Unlock the smart finders forever.</p>
+            <ul class="plan-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Everything in Free</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Auto-find <strong>Duplicates</strong></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Auto-find <strong>Similar shots &amp; bursts</strong></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Auto-find <strong>Blurry photos</strong></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Auto-find <strong>Large videos</strong></li>
+            </ul>
+            <a class="btn btn-primary" href="#download">Get Sweep Pro</a>
+          </article>
+        </div>
+
+        <p class="no-sub-banner"><strong>No subscriptions, ever.</strong> One purchase, restored automatically on your devices.</p>
+      </div>
+    </section>
+
+    <!-- ===================== SOCIAL PROOF (illustrative) ===================== -->
+    <section class="section" aria-labelledby="proof-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why people love it</span>
+          <h2 id="proof-title">A cleaner that feels like a game</h2>
+          <p>Illustrative reactions to the Sweep experience — shown to convey the feel of the app.</p>
+        </div>
+        <div class="quotes">
+          <figure class="quote">
+            <div class="stars" aria-label="Five stars">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+            </div>
+            <p>"I cleared a year of screenshots on my coffee break. The counter climbing is weirdly addictive."</p>
+            <figcaption class="who">Illustrative quote</figcaption>
+          </figure>
+          <figure class="quote">
+            <div class="stars" aria-label="Five stars">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+            </div>
+            <p>"No subscription, nothing uploaded anywhere. That's the whole reason I trusted it with my photos."</p>
+            <figcaption class="who">Illustrative quote</figcaption>
+          </figure>
+          <figure class="quote">
+            <div class="stars" aria-label="Five stars">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3L22 9.3l-5 4.7 1.2 6.9L12 17.8 5.8 20.9 7 14 2 9.3l7.1-1L12 2Z"/></svg>
+            </div>
+            <p>"The Large Videos finder freed almost 6 GB in five minutes. Felt like cheating."</p>
+            <figcaption class="who">Illustrative quote</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Questions, answered</h2>
+        </div>
+
+        <div class="faq">
+          <details open>
+            <summary>Is it safe to use?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p>Yes. Sweep runs entirely on your iPhone and never deletes anything without your tap. Binned photos move to iOS Recently Deleted, where they wait 30 days before being removed — so nothing is lost by accident.</p>
+          </details>
+
+          <details>
+            <summary>Does it delete photos permanently?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p>No. When you tap Clean, photos go to your standard iOS Recently Deleted album. You have 30 days to recover anything before iOS removes it permanently — exactly like deleting in the Photos app.</p>
+          </details>
+
+          <details>
+            <summary>Can you see my photos?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p>No. There is no server and no upload. Sweep can only show and organize photos on your own device. We collect no data and have no way to view your library.</p>
+          </details>
+
+          <details>
+            <summary>Is it really a one-time purchase?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p>Yes. The core app is free with no caps. Sweep Pro is a single $4.99 in-app purchase through the App Store — no subscriptions, no recurring charges. Restore it for free on your other devices.</p>
+          </details>
+
+          <details>
+            <summary>Does it need an internet connection?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p>No. Sweep works fully offline. The only time the network is used is the one-time App Store purchase or restore, which is handled by Apple — not by us.</p>
+          </details>
+
+          <details>
+            <summary>Which iPhones does it support?
+              <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <!-- TODO: confirm the exact minimum iOS version before launch -->
+            <p>Sweep is built for modern iPhones running a recent version of iOS. If your phone runs the current or previous major iOS release, you're good to go.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="section cta-band" id="download" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-inner">
+          <span class="eyebrow">Get started</span>
+          <h2 id="cta-title">Start freeing space in the next minute.</h2>
+          <p>Download Sweep, swipe through a month, and watch the gigabytes add up. Free to start, no account needed.</p>
+          <div class="cta-actions">
+            <!-- TODO: replace href="#" with your real App Store listing URL -->
+            <a class="appstore-badge" href="#" aria-label="Download Sweep on the App Store">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2 1.6-3 1.7-3.1-.9-1.4-2.4-1.5-2.9-1.6-1.2-.1-2.4.7-3 .7s-1.6-.7-2.6-.7c-1.3 0-2.6.8-3.3 2-1.4 2.4-.4 6 1 8 .7 1 1.4 2 2.5 2 1 0 1.4-.6 2.6-.6s1.5.6 2.6.6c1.1 0 1.8-1 2.4-2 .8-1.1 1.1-2.2 1.1-2.3 0-.1-2.1-.8-2.1-3.2ZM14.5 6.3c.6-.7 1-1.7.9-2.7-.8 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.5.9.1 1.9-.4 2.5-1.1Z"/></svg>
+              <span class="badge-copy">
+                <span class="badge-small">Download on the</span>
+                <span class="badge-big">App Store</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Sweep home">
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#03261f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19.5 4.5 13 11" />
+                <path d="M14 9c-3 0-5 1.5-6.4 4.2C6.3 15.6 5 17 3 18c2.6 1.4 5.6 1.6 8 .2 2.4-1.4 3.6-3.6 3.6-6.2 0-1.1-.2-2-.6-3Z" />
+                <path d="M18 3l.6 1.6L20 5l-1.4.7L18 7l-.6-1.3L16 5l1.4-.4L18 3Z" fill="#03261f" stroke="none" />
+              </svg>
+            </span>
+            <span>Sweep</span>
+          </a>
+          <p>Clean your camera roll. One swipe at a time. 100% on-device, one-time unlock, no subscription.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#how">How it works</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="privacy.html">Privacy Policy</a>
+            <!-- TODO: replace with your real support email -->
+            <a href="mailto:support@example.com">Support</a>
+            <a href="#download">Download</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Sweep. All rights reserved.</span>
+        <span>Made for iPhone. Not affiliated with Apple Inc.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
